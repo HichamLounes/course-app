@@ -1,0 +1,90 @@
+<!-- <div class="container">
+    <h2>All Courses</h2>
+    <ng-container *ngFor="let course of courses">
+        <div class="course-container">
+            <div class="course-card">
+                <div>
+                    <img [src]="course.image" style="width: 190px; height: 120p;">
+                </div>
+                <div class="course-name">
+                    <h5>{{course.name}}</h5>
+                </div>
+                <div class="course-desciption">
+                    <p>{{course.desc.slice(0,80) }}...</p>
+                </div>
+                <div class="details">
+                    <div class="course-type" [ngStyle]="{color:course.type==='Free' ? 'Green': 'Red'}">
+                        {{course.type}}
+                    </div>
+                    <div class="course-price">
+                        <b>Price: </b>${{course.price}}
+                    </div>
+                </div>
+                <div class="course-buttons">
+                    <button class="btn btn-buy">Buy Now</button>
+                    <button class="btn btn-show" routerLink="/Courses/Course/{{course.id}}">Show Details</button>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</div> -->
+
+<!-- 
+<div class="articles">
+    <h2 class="main-title">Articles</h2>
+    <div class="container">
+
+
+
+        <div class="box">
+
+
+            <img src="../../assets/img/skills.jpeg">
+            <div class="content">
+                <h3>test Title</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="info">
+                <a href="#">Read More</a>
+                <i class="fa-solid fa-right-long"></i>
+            </div>
+        </div>
+
+
+
+    </div>
+</div> -->
+
+<div class="articles">
+    <div class="dots dots-up"></div>
+    <div class="dots dots-down"></div>
+    <h1 style="text-align: center;padding-bottom: 30px;">All Courses</h1>
+    <div class="container">
+        <ng-container *ngFor="let course of courses">
+            <div class="box">
+                <div class="content">
+
+                    <img [src]="course.image">
+
+                    <h3>{{course.name}}</h3>
+
+                    <p>{{course.desc.slice(0,60) }}...</p>
+
+                    <br><br>
+                    <div class="details">
+                        <div class="course-type" [ngStyle]="{color:course.type==='Free' ? 'Green': 'Red'}">
+                            {{course.type}}
+                        </div>
+                        <div class="course-price">
+                            <b>Price: </b>${{course.price}}
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-secondary" routerLink="/Courses/Course/{{course.id}}">Show Details</button>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

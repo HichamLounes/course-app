@@ -1,0 +1,65 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.all {
+
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    background-color: #d0d0d0;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    
+}
+
+.course-conatiner {
+    position: relative;
+    display: felx;
+    flex-direction: column;
+    /*     grid-template-columns: repeat(auto-fill, minmax(1fr));
+    gap: 30px; */
+    justify-content: center;
+    align-items: center;
+    /* width: clamp(200px, 50%, 1000px); */
+
+}
+
+.image {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.image img {
+    border-radius: 10px;
+    /* aspect-ratio: 16/9; */
+    width: 340px;
+    height: 190px;
+}
+
+.course-details {
+    size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*     justify-content: space-between; */
+    margin-bottom: 15px;
+}

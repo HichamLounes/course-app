@@ -1,0 +1,24 @@
+<div class="main-contanier">
+    <div class="nav-container">
+        <ul>
+            <li routerLinkActive="active"><a [routerLink]="'Home'">Home</a></li>
+            <li routerLinkActive="active"><a routerLink="Courses">Courses</a></li>
+            <li routerLinkActive="active"><a routerLink="Contact">Contact</a></li>
+            <li routerLinkActive="active"><a routerLink="About">About</a></li>
+            <span style="float: right;">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <li (click)="logIn()"><button class="btn btn-primary me-md-2" type="button">Log In</button></li>
+                    <li (click)="logOut()"><button class="btn btn-danger" type="button">Log Out</button></li>
+                </div>
+            </span>
+        </ul>
+    </div>
+    <div class="component-container">
+        <!--<app-home></app-home>
+        <app-courses></app-courses>
+        <app-contact></app-contact>
+        <app-about></app-about>-->
+        <router-outlet></router-outlet>
+        <div class="spinner" *ngIf="display"></div>
+    </div>
+</div>
